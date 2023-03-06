@@ -1,0 +1,48 @@
+.btn-mark-task {
+  background: var(--background-color);
+  border: 1px solid var(--outline);
+  border-radius: 50%;
+  height: 20px;
+  justify-self: start;
+  width: 20px;
+}
+
+.btn-mark-task:hover {
+  background: linear-gradient(var(--background-color), var(--background-color)) padding-box, linear-gradient(#57ddff, #c058f3) border-box;
+  border: 1px solid transparent;
+}
+
+.marked,
+.marked:hover {
+  background: url(../../assets/icon-check.svg), linear-gradient(#57ddff, #c058f3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border: none;
+}
+
+.task {
+  color: var(--text);
+}
+
+.completed {
+  color: #777a92;
+  text-decoration: line-through;
+}
+
+.btn-delete-task {
+  background: url(../../assets/icon-cross.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto contain;
+  border: none;
+  cursor: pointer;
+  /* height: 1rem; */
+  justify-self: end;
+  padding: 0.8rem;
+  /* width: 1rem; */
+}
+
+.btn-delete-task:hover {
+  transform: scale(1.2);
+}

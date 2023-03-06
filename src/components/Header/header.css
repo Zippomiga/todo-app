@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  color: #fafafa;
+  letter-spacing: 12px;
+  margin: auto;
+  padding-top: 2rem;
+  width: 40%;
+}
+
+.header h1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-mode {
+  border: none;
+  cursor: pointer;
+  height: 26px;
+  width: 26px;
+}
+
+.sun {
+  background: url('../../assets/icon-sun.svg');
+}
+
+.moon {
+  background: url('../../assets/icon-moon.svg');
+}
+
+.form-create-task {
+  position: relative;
+}
+
+.input-create-task {
+  background: var(--background-color);
+  border: none;
+  border-radius: 6px;
+  color: var(--text);
+  box-shadow: 0 0 4px var(--outline);
+  margin-bottom: 2rem;
+  outline: transparent;
+  padding: 1rem 1rem 1rem 3rem;
+  width: 100%;
+}
+
+.btn-create-task {
+  background: linear-gradient(var(--background-color), var(--background-color)) padding-box, linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)) border-box;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  left: calc(3rem /2 - 10px);
+  position: absolute;
+  top: calc(3rem /2 - 10px);
+  width: 20px;
+}
+
+
+@media screen and (max-width: 425px) {
+  .header {
+    padding-top: 0;
+    width: 90%;
+  }
+}

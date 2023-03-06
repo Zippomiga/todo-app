@@ -1,0 +1,101 @@
+.list-tasks {
+  background: var(--background-color);
+  border-radius: 6px;
+  box-shadow: 0 0 4px var(--outline);
+  margin: auto;
+  width: 40%;
+}
+
+.list-tasks label {
+  align-items: center;
+  border-bottom: 1px solid var(--outline);
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 8% auto 8%;
+  padding: 0.7rem;
+}
+
+.list-tasks-actions-desktop {
+  align-items: center;
+  color: var(--text);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  justify-content: space-between;
+}
+
+.list-tasks-actions-desktop button {
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  padding: 0.8rem;
+}
+
+.list-tasks-actions-desktop button:hover {
+  color: #3a7bfd;
+}
+
+.list-tasks-actions-desktop span {
+  padding: 0.8rem;
+}
+
+
+.list-tasks-actions-mobile {
+  display: none;
+}
+
+.list-tasks-actions-mobile button {
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  padding: 0.8rem;
+}
+
+.list-tasks-actions-mobile button:hover {
+  color: #3a7bfd;
+}
+
+.list-tasks-actions-mobile span {
+  padding: 0.8rem;
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .list-tasks {
+    border-radius: 6px 6px 0 0;
+    width: 90%;
+  }
+
+  .list-tasks-actions-desktop {
+    display: none;
+  }
+
+
+  .list-tasks-actions-mobile {
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    gap: 1rem;
+    margin: auto;
+    width: 90%;
+  }
+
+  .list-tasks-actions-mobile div {
+    background: var(--background-color);
+    box-shadow: 0 0 4px var(--outline);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 6px 6px;
+    padding: 0.2rem 0;
+  }
+
+  .list-tasks-actions-mobile div:nth-child(2) {
+    border-radius: 6px;
+    box-shadow: 0 0 4px var(--outline);
+    justify-content: space-around;
+  }
+}
